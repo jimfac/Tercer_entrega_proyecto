@@ -1,0 +1,29 @@
+/*ESTRUCTURA*/
+
+@mixin estructura($display,$direction,$justify,$align) {
+    display:$display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    align-content: $align;
+    
+}
+
+// SERVICIOS EMPRESARIALES //
+.container1{
+    @include estructura(flex,column , space-around,center );
+    text-align: center;
+   
+}
+
+//QUIENES SOMOS//
+section{
+    @include estructura(flex,column , space-between,center );
+    
+}
+//UBICACION//
+.direccion{
+    @include estructura(flex,column , space-around,center );
+    padding-bottom: 15px;
+}
+

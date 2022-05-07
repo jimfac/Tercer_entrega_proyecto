@@ -1,0 +1,68 @@
+/*TIPOGRAFIA*/
+$estilos:(
+    colour:rgb(2, 69, 71),
+    centro:center,
+    fuente:Arial,
+    peso:bold,
+    tipo:normal
+
+);
+//VARIABLES//
+
+$bordo:rgb(65, 1, 14);
+
+//INDEX//
+.empresa{
+    padding-bottom: 400px; 
+}
+//SERVICIOS EMPRESARIALES//
+.titulo-se{
+    
+    font-family: map-get($map:$estilos , $key:fuente );
+    font-weight:map-get($map:$estilos , $key:peso);
+    text-align: map-get($map:$estilos , $key:centro );
+    font-style: map-get($map:$estilos , $key:tipo );
+    color: map-get($map:$estilos, $key:colour);
+}
+//QUIENES SOMOS//
+.lema{
+    color:map-get($map:$estilos, $key:colour);
+    font-weight:map-get($map:$estilos , $key:peso);
+}
+
+.descripcion{
+    @extend .titulo-se;   
+    font-size: 1rem;
+   
+}
+//CONTACTANOS//
+
+.contacto{
+    @extend .titulo-se;
+    font-size: 1,5rem;
+    margin-bottom: 15px;     
+}
+
+.contacto-web{
+    border: 1px solid grey;
+    padding: 10px;
+    margin-left: 500px ;
+    margin-right: 500px ;
+    width: max-content;
+    text-align: justify;
+    background-color: snow;
+    
+}
+.datos {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1,5rem;
+    font-weight: bold;
+    margin-top: 10px;  
+}
+
+//UBICACION//
+.ubicacion {
+    @extend .titulo-se;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}

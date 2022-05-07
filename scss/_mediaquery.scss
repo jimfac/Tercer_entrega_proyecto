@@ -1,0 +1,40 @@
+/*MEDIA QUERY*/
+
+//UBICACION//
+
+@media (max-width: 768px) {
+    iframe{
+        width: 400px;
+
+
+    }
+    .imgEquipo{
+        width: 400px;
+        height: 300px;
+    }
+
+    .contacto-web{
+        margin-left: 200px;
+        width: 450px;
+       
+    
+    }
+}
+
+//CONTACTANOS//
+
+@media (max-width:1200px) and (min-width:769){
+    .contacto-web{
+        margin-left: 300px;
+    }
+
+}
+@media (max-width: 576px){
+
+ .contacto-web{
+        margin-left: 100px;
+
+    }
+
+
+}

@@ -1,0 +1,25 @@
+/* ANIMACIONES */
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+// SERVICIOS EMPRESARIALES //
+.card{
+    &:hover{
+        transform: scale(1.15);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+}
+//QUIENES SOMOS//
+
+.imgEquipo{
+    animation-name: aparecer; 
+    animation-duration: 10s;  
+    animation-iteration-count: infinite;
+}
